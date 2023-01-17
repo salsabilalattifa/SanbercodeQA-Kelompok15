@@ -7,4 +7,4 @@ Nama Anggota Kelompok 15 :
 3. Salsabila Lattifa Fikri
 4. Erga Saputra
 
-Link Test Plan Document : 
+Link Test Plan Document : https://docs.google.com/document/d/1KnzL1m3_OZBVa93RFrBxi4beE0hrG_EIeyZrv0PpF78/edit?usp=sharing
