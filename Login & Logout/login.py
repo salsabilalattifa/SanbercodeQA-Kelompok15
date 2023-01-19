@@ -29,7 +29,7 @@ class Login_kelompok_15(unittest.TestCase):
         driver.maximize_window()
         time.sleep(1)
         # isi username
-        driver.find_element(By.ID, "Username").send_keys("admin")
+        driver.find_element(By.ID, "Username").send_keys("gaergarga")
         time.sleep(1)
         # isi Password
         driver.find_element(By.ID, "Password").send_keys("123456")
@@ -46,7 +46,35 @@ class Login_kelompok_15(unittest.TestCase):
         driver.find_element(By.ID, "Username").send_keys("inisalah")
         time.sleep(1)
         # isi Password
-        driver.find_element(By.ID, "Password").send_keys("admin")
+        driver.find_element(By.ID, "Password").send_keys("password8")
+        time.sleep(1)
+        driver.find_element(By.NAME, "login").click()
+        time.sleep(2)
+
+    def testLogin_blank_username(self):
+        driver = self.driver
+        driver.get("https://itera-qa.azurewebsites.net/Login/Index/")  # buka websitenya
+        driver.maximize_window()
+        time.sleep(1)
+        # isi username
+        driver.find_element(By.ID, "Username").send_keys("")
+        time.sleep(1)
+        # isi Password
+        driver.find_element(By.ID, "Password").send_keys("password8")
+        time.sleep(1)
+        driver.find_element(By.NAME, "login").click()
+        time.sleep(2)
+
+    def testLogin_blank_password(self):
+        driver = self.driver
+        driver.get("https://itera-qa.azurewebsites.net/Login/Index/")  # buka websitenya
+        driver.maximize_window()
+        time.sleep(1)
+        # isi username
+        driver.find_element(By.ID, "Username").send_keys("gaergarga")
+        time.sleep(1)
+        # isi Password
+        driver.find_element(By.ID, "Password").send_keys("")
         time.sleep(1)
         driver.find_element(By.NAME, "login").click()
         time.sleep(2)
@@ -71,10 +99,10 @@ class Login_kelompok_15(unittest.TestCase):
         driver.maximize_window()
         time.sleep(1)
         # isi username
-        driver.find_element(By.ID, "Username").send_keys("admin")
+        driver.find_element(By.ID, "Username").send_keys("gaergarga")
         time.sleep(1)
         # isi Password
-        driver.find_element(By.ID, "Password").send_keys("admin")
+        driver.find_element(By.ID, "Password").send_keys("password8")
         time.sleep(1)
         driver.find_element(By.NAME, "login").click()
         time.sleep(3)
