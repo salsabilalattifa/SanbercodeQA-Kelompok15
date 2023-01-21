@@ -1,4 +1,8 @@
-class Data_create():
+import random
+
+class Data_CRUD():
+    num2 = random.randint(0, 1000)
+    email_random="jazila"+'num2'+"@gmail.com" 
     valid_name ="Jazi"
     valid_company="Wow"
     valid_adress="Temanggung"
@@ -13,3 +17,6 @@ class Data_create():
     empty_city=""
     empty_phone=""
     empty_email=""
+    path_email="jazilaatiya17@gmail.com"
+    update_email_invalid="jazilaatiya@gmail.com"
+
